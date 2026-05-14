@@ -1,0 +1,724 @@
+{
+  "pieces": [
+    {
+      "position": { "x": 0, "y": 0 },
+      "type": "Rook",
+      "charRepresentation": "R",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 1, "y": 0 },
+      "type": "Knight",
+      "charRepresentation": "N",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 1,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 2, "dy": 1 },
+        { "dx": 2, "dy": -1 },
+        { "dx": -2, "dy": 1 },
+        { "dx": -2, "dy": -1 },
+        { "dx": 1, "dy": 2 },
+        { "dx": 1, "dy": -2 },
+        { "dx": -1, "dy": 2 },
+        { "dx": -1, "dy": -2 }
+      ],
+      "captureDirs": [
+        { "dx": 2, "dy": 1 },
+        { "dx": 2, "dy": -1 },
+        { "dx": -2, "dy": 1 },
+        { "dx": -2, "dy": -1 },
+        { "dx": 1, "dy": 2 },
+        { "dx": 1, "dy": -2 },
+        { "dx": -1, "dy": 2 },
+        { "dx": -1, "dy": -2 }
+      ]
+    },
+    {
+      "position": { "x": 2, "y": 0 },
+      "type": "Bishop",
+      "charRepresentation": "B",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 3, "y": 0 },
+      "type": "Queen",
+      "charRepresentation": "Q",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 },
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 },
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 4, "y": 0 },
+      "type": "King",
+      "charRepresentation": "K",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": true,
+      "range": 1,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 },
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 },
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 5, "y": 0 },
+      "type": "Bishop",
+      "charRepresentation": "B",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 6, "y": 0 },
+      "type": "Knight",
+      "charRepresentation": "N",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 1,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 2, "dy": 1 },
+        { "dx": 2, "dy": -1 },
+        { "dx": -2, "dy": 1 },
+        { "dx": -2, "dy": -1 },
+        { "dx": 1, "dy": 2 },
+        { "dx": 1, "dy": -2 },
+        { "dx": -1, "dy": 2 },
+        { "dx": -1, "dy": -2 }
+      ],
+      "captureDirs": [
+        { "dx": 2, "dy": 1 },
+        { "dx": 2, "dy": -1 },
+        { "dx": -2, "dy": 1 },
+        { "dx": -2, "dy": -1 },
+        { "dx": 1, "dy": 2 },
+        { "dx": 1, "dy": -2 },
+        { "dx": -1, "dy": 2 },
+        { "dx": -1, "dy": -2 }
+      ]
+    },
+    {
+      "position": { "x": 7, "y": 0 },
+      "type": "Rook",
+      "charRepresentation": "R",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 0, "y": 1 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": 1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": -1, "dy": 1 }
+      ]
+    },
+    {
+      "position": { "x": 1, "y": 1 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": 1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": -1, "dy": 1 }
+      ]
+    },
+    {
+      "position": { "x": 2, "y": 1 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": 1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": -1, "dy": 1 }
+      ]
+    },
+    {
+      "position": { "x": 3, "y": 1 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": 1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": -1, "dy": 1 }
+      ]
+    },
+    {
+      "position": { "x": 4, "y": 1 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": 1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": -1, "dy": 1 }
+      ]
+    },
+    {
+      "position": { "x": 5, "y": 1 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": 1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": -1, "dy": 1 }
+      ]
+    },
+    {
+      "position": { "x": 6, "y": 1 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": 1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": -1, "dy": 1 }
+      ]
+    },
+    {
+      "position": { "x": 7, "y": 1 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "White",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": 1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": -1, "dy": 1 }
+      ]
+    },
+    {
+      "position": { "x": 0, "y": 6 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": -1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 1, "y": 6 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": -1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 2, "y": 6 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": -1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 3, "y": 6 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": -1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 4, "y": 6 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": -1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 5, "y": 6 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": -1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 6, "y": 6 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": -1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 7, "y": 6 },
+      "type": "Pawn",
+      "charRepresentation": "P",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 2,
+      "canCapture": true,
+      "canPromote": true,
+      "moveDirs": [{ "dx": 0, "dy": -1 }],
+      "captureDirs": [
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 0, "y": 7 },
+      "type": "Rook",
+      "charRepresentation": "R",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 1, "y": 7 },
+      "type": "Knight",
+      "charRepresentation": "N",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 1,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 2, "dy": 1 },
+        { "dx": 2, "dy": -1 },
+        { "dx": -2, "dy": 1 },
+        { "dx": -2, "dy": -1 },
+        { "dx": 1, "dy": 2 },
+        { "dx": 1, "dy": -2 },
+        { "dx": -1, "dy": 2 },
+        { "dx": -1, "dy": -2 }
+      ],
+      "captureDirs": [
+        { "dx": 2, "dy": 1 },
+        { "dx": 2, "dy": -1 },
+        { "dx": -2, "dy": 1 },
+        { "dx": -2, "dy": -1 },
+        { "dx": 1, "dy": 2 },
+        { "dx": 1, "dy": -2 },
+        { "dx": -1, "dy": 2 },
+        { "dx": -1, "dy": -2 }
+      ]
+    },
+    {
+      "position": { "x": 2, "y": 7 },
+      "type": "Bishop",
+      "charRepresentation": "B",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 3, "y": 7 },
+      "type": "Queen",
+      "charRepresentation": "Q",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 },
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 },
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 4, "y": 7 },
+      "type": "King",
+      "charRepresentation": "K",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": true,
+      "range": 1,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 },
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 },
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 5, "y": 7 },
+      "type": "Bishop",
+      "charRepresentation": "B",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 1 },
+        { "dx": 1, "dy": -1 },
+        { "dx": -1, "dy": 1 },
+        { "dx": -1, "dy": -1 }
+      ]
+    },
+    {
+      "position": { "x": 6, "y": 7 },
+      "type": "Knight",
+      "charRepresentation": "N",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": false,
+      "isImmortal": false,
+      "range": 1,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 2, "dy": 1 },
+        { "dx": 2, "dy": -1 },
+        { "dx": -2, "dy": 1 },
+        { "dx": -2, "dy": -1 },
+        { "dx": 1, "dy": 2 },
+        { "dx": 1, "dy": -2 },
+        { "dx": -1, "dy": 2 },
+        { "dx": -1, "dy": -2 }
+      ],
+      "captureDirs": [
+        { "dx": 2, "dy": 1 },
+        { "dx": 2, "dy": -1 },
+        { "dx": -2, "dy": 1 },
+        { "dx": -2, "dy": -1 },
+        { "dx": 1, "dy": 2 },
+        { "dx": 1, "dy": -2 },
+        { "dx": -1, "dy": 2 },
+        { "dx": -1, "dy": -2 }
+      ]
+    },
+    {
+      "position": { "x": 7, "y": 7 },
+      "type": "Rook",
+      "charRepresentation": "R",
+      "color": "Black",
+      "isFirstMove": true,
+      "isSliding": true,
+      "isImmortal": false,
+      "range": 8,
+      "canCapture": true,
+      "canPromote": false,
+      "moveDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 }
+      ],
+      "captureDirs": [
+        { "dx": 1, "dy": 0 },
+        { "dx": -1, "dy": 0 },
+        { "dx": 0, "dy": 1 },
+        { "dx": 0, "dy": -1 }
+      ]
+    }
+  ]
+}

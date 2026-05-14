@@ -10,14 +10,14 @@ import (
  * The first dimension represents the ranks (rows) and the second dimension represents the files (columns).
  */
 type Board struct {
-	Squares [][]pieces.Piece
+	Squares [][]*pieces.Piece
 }
 
 func NewBoard(height uint8, width uint8) *Board {
 	// Initialize the board with empty pieces (or nil) for each square.
-	squares := make([][]pieces.Piece, height)
+	squares := make([][]*pieces.Piece, height)
 	for i := range squares {
-		squares[i] = make([]pieces.Piece, width)
+		squares[i] = make([]*pieces.Piece, width)
 	}
 	return &Board{Squares: squares}
 }
