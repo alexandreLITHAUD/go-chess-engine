@@ -16,6 +16,7 @@ type Piece struct {
 	IsFirstMove        bool                 `json:"isFirstMove"`        // Indicates if the piece has moved before (useful for pawns and castling)
 	IsSliding          bool                 `json:"isSliding"`          // Indicates if the piece can move multiple squares in a direction (e.g., bishops, rooks, queens)
 	IsImmortal         bool                 `json:"isImmortal"`         // Indicates if the piece cannot be captured (e.g., kings in some variants)
+	IsAllSides         bool                 `json:"isAllSides"`         // Indicates if the piece can be played by all players (e.g., in a 4-player chess variant, some pieces might be shared among players)
 	Range              int8                 `json:"range"`              // Maximum range of movement for the piece (e.g., 1 for knights, 8 for queens)
 	CanCapture         bool                 `json:"canCapture"`         // Indicates if the piece can capture other pieces (e.g., pawns can capture diagonally, but not straight ahead)
 	CanPromote         bool                 `json:"canPromote"`         // Indicates if the piece can be promoted (e.g., pawns can be promoted to queens, rooks, bishops, or knights)
@@ -23,7 +24,7 @@ type Piece struct {
 	CaptureDirs        []position.Offset    `json:"captureDirs"`        // Possible capture directions for the piece (e.g., for a pawn: [[1, 0], [1, -1], [1, 1]] for white pawns)
 }
 
-func newPiece(pieceType string, color string, isFirstMove bool, isSliding bool, isImmortal bool, moveRange int8, canCapture bool, canPromote bool, moveDirs []position.Offset, captureDirs []position.Offset, position position.Coordinates) *Piece {
+func newPiece(pieceType string, color string, isFirstMove bool, isSliding bool, isImmortal bool, isAllSides bool, moveRange int8, canCapture bool, canPromote bool, moveDirs []position.Offset, captureDirs []position.Offset, position position.Coordinates) *Piece {
 	return &Piece{
 		Position:    position,
 		Type:        pieceType,
@@ -31,6 +32,7 @@ func newPiece(pieceType string, color string, isFirstMove bool, isSliding bool, 
 		IsFirstMove: isFirstMove,
 		IsSliding:   isSliding,
 		IsImmortal:  isImmortal,
+		IsAllSides:  isAllSides,
 		Range:       moveRange,
 		CanCapture:  canCapture,
 		CanPromote:  canPromote,
